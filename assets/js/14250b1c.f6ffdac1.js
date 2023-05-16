@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1],{3031:e=>{e.exports=JSON.parse('{"title":"Resi","slug":"/category/resi","permalink":"/docs/category/resi","navigation":{"previous":{"title":"Moduli","permalink":"/docs/category/moduli"},"next":{"title":"Crea un nuovo reso","permalink":"/docs/modules/return-orders/create"}}}')}}]);
