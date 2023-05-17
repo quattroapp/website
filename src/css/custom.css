@@ -53,7 +53,7 @@ code {
     @apply font-medium text-gray-900 !important;
 }
 
-.navbar__item.navbar__link {
+.navbar__link {
     @apply flex items-center;
 }
 

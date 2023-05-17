@@ -30,6 +30,11 @@ const config = {
   i18n: {
     defaultLocale: "it",
     locales: ["it"],
+    localeConfigs: {
+      it: {
+        htmlLang: "it-IT",
+      },
+    },
   },
 
   presets: [
@@ -65,6 +70,10 @@ const config = {
             to: "/docs",
             position: "left",
             label: "Docs",
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           {
             href: "https://www.quattroapp.cloud/",
