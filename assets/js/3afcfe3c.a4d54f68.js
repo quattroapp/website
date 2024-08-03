@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[512],{5573:i=>{i.exports=JSON.parse('{"title":"Moduli disponibili","slug":"/category/moduli","permalink":"/docs/category/moduli","navigation":{"previous":{"title":"Introduzione","permalink":"/docs/"},"next":{"title":"Ordini","permalink":"/docs/category/ordini"}}}')}}]);

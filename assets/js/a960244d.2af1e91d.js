@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[551],{9316:e=>{e.exports=JSON.parse('{"title":"Ordini","slug":"/category/ordini","permalink":"/docs/category/ordini","navigation":{"previous":{"title":"Moduli","permalink":"/docs/category/moduli"},"next":{"title":"Stato Prodotti","permalink":"/docs/modules/orders/product-states"}}}')}}]);
