@@ -1,10 +1,11 @@
 import React, { PropsWithChildren } from "react";
 import Logo from "../assets/logo_with_text.svg";
+import WebsiteImageUrl from '@site/static/img/website_screen.png';
 import Head from "@docusaurus/Head";
 
 export default function Home(): JSX.Element {
   return (
-    <div className={"flex flex-1 flex-col space-y-12 md:justify-between"}>
+    <div className={"flex flex-1 flex-col overflow-x-hidden"}>
       <Head htmlAttributes={{ class: "use-tailwind" }} children={undefined} />
       <Header />
       <HeroSection />
@@ -21,7 +22,6 @@ function Header() {
       }
     >
       <Logo height={40} width={162} />
-      <NavLinks />
       <Actions />
     </div>
   );
@@ -52,13 +52,12 @@ function Actions() {
     <div
       className={"ml-auto flex hidden flex-row items-center space-x-8 sm:flex"}
     >
-      <NavLink>Accedi</NavLink>
       <div
         className={
-          "flex items-center justify-center rounded-full bg-blue-500 px-5 py-2 font-semibold text-white hover:bg-blue-600"
+          "flex items-center justify-center rounded-full border border-gray-500 px-5 py-2 text-gray-500"
         }
       >
-        Inizia qui
+        In arrivo nel 2025
       </div>
     </div>
   );
@@ -66,33 +65,36 @@ function Actions() {
 
 function HeroSection() {
   return (
-    <div
-      className={
-        "flex flex-col items-center justify-center space-y-9 text-center"
-      }
-    >
-      <span className={"text-4xl font-bold md:text-6xl"}>
-        La gestione <span className={"text-blue-500"}>in cloud</span>
-        <br />
-        pensata per il tuo business.
-      </span>
-      <div className={"flex px-6 md:text-lg"}>
-        Raccogli gli ordini da più canali, riduci gli errori, automatizza
-        l’organizzazione
-        <br className={"hidden md:inline"} /> delle spedizioni e migliora la
-        gestione delle relazioni con i tuoi clienti.
-      </div>
+    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-24 lg:ml-40 mt-12 lg:mt-0">
       <div
         className={
-          "flex items-center justify-center rounded-full border border-gray-500 px-5 py-2 text-gray-500"
+          "flex flex-col items-center justify-center space-y-9 text-center shrink-0"
         }
       >
-        In arrivo nel 2024
+        <span className={"text-4xl font-bold md:text-6xl"}>
+          La gestione <span className={"text-blue-500"}>in cloud</span>
+          <br />
+          pensata per il tuo business.
+        </span>
+        <div className={"flex px-6 md:text-lg"}>
+          Raccogli gli ordini da più canali, riduci gli errori, automatizza
+          l’organizzazione
+          <br className={"hidden md:inline"} /> delle spedizioni e migliora la
+          gestione delle relazioni con i tuoi clienti.
+        </div>
+        <div
+          className={
+            "flex items-center justify-center rounded-full border border-gray-500 px-5 py-2 text-gray-500"
+          }
+        >
+          In arrivo nel 2025
+        </div>
       </div>
+      <img src={WebsiteImageUrl} className="mt-8 ml-8 lg:mt-0 lg:ml-0 w-[250vw] max-w-[250vw] lg:w-auto lg:h-[75vh] lg:-mb-48 lg:z-20 border rounded-lg"/>
     </div>
   );
 }
 
 function Footer() {
-  return <div className={"hidden h-32 bg-blue-500 md:inline-flex"} />;
+  return <div className={"mt-auto hidden h-64 bg-blue-500 md:inline-flex"} />;
 }
