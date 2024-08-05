@@ -76,3 +76,35 @@ header > h1 {
 .breadcrumbs {
     padding-left: 0;
 }
+
+.label {
+    @apply px-4 py-1 text-lg rounded-md text-white font-medium flex items-center justify-center whitespace-nowrap;
+}
+
+.label-small {
+    @apply px-1.5 py-0.5 text-xs font-bold rounded;
+}
+
+.label-new {
+    @apply bg-gray-500;
+}
+
+.label-confirmed {
+    @apply bg-blue-500;
+}
+
+.label-assigned {
+    @apply bg-yellow-500;
+}
+
+.label-delivered {
+    @apply bg-green-500;
+}
+
+.label-residual {
+    @apply bg-red-600;
+}
+
+.state-list {
+    @apply flex items-center gap-5 justify-start;
+}

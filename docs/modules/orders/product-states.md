@@ -8,6 +8,19 @@ Lo stato del prodotto ordinato permette di identificare la posizione del prodott
 non sono modificabili liberamente, ma vengono aggiornati dall'applicativo per ridurre il lavoro e minimizzare i
 potenziali errori.
 
+<div class="state-list">
+    <span class="label label-new">Nuovo</span>
+    →
+    <div>
+        <span class="label label-confirmed">Confermato</span>
+        <span style={{marginTop:8}} class="label label-residual">Residuo</span>
+    </div>
+    →
+    <span class="label label-assigned">In spedizione</span>
+    →
+    <span class="label label-delivered">Consegnato</span> 
+</div>
+
 ## Gli Stati del Prodotto
 
 Un prodotto ordinato può avere un solo stato alla volta, il quale determina le azioni che possono essere eseguite sul
@@ -37,3 +50,12 @@ Questo stato viene automaticamente assegnato quando la spedizione che contiene i
 
 Questo stato viene assegnato ai residui generati automaticamente in seguito allo scarico da magazzino o all'aggiunta del
 prodotto alla spedizione.
+
+## Tabella Riassuntiva delle Azioni
+
+| Stato                                                                                                                                                 | Modifica dettagli ordine | Modifica agente | Modifica destinazione | Elimina riga | Modifica quantità | Modifica prezzo |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|-----------------|-----------------------|--------------|-------------------|-----------------|
+| <span class="label label-small label-new">Nuovo</span>                                                                                                | ✔️                       | ✔️              | ✔️                    | ✔️           | ✔️                | ✔️              |
+| <span class="label label-small label-confirmed">Confermato</span><span style={{marginTop: 8}} class="label label-small label-residual">Residuo</span> | ✔️                       | ✔️              | ✔️                    | ✔️           | ✔️                | ✔️              |
+| <span class="label label-small label-assigned">In spedizione</span>                                                                                   | ✔️                       | ✔️              | ❌                    | ❌           | ❌                | ✔️              |
+| <span class="label label-small label-delivered">Consegnato</span>                                                                                     | ❌                       | ✔️              | ❌                    | ❌           | ❌                | ✔️             |
